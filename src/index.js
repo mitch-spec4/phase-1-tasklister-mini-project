@@ -13,7 +13,7 @@ function buildToDo(todo) {
   let btn = document.createElement('button')
   btn.addEventListener('click', handleDelete)
   btn.textContent = 'x'
-  li.textContent = $(todo)
+  li.textContent = `${todo}`
   li.appendChild(btn)
   console.log(li)
   document.querySelector('#tasks').appendChild(li)
